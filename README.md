@@ -6,7 +6,9 @@
 
 修改部分：
 1、增加了中文部分（locales下的中文支持不符合AMD规范，requireJs加载报错）
+
 var dates = $.fn.datetimepicker.dates = {
+
     en: {
       days:        ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
       daysShort:   ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
@@ -28,8 +30,11 @@ var dates = $.fn.datetimepicker.dates = {
       suffix:      ['st', 'nd', 'rd', 'th'],
       today:       '今天'
     }
+    
   };
   
 2、修改了Firefox下的错误
+
 //this.defaultTimeZone = (new Date).toString().split('(')[1].slice(0, -1);
+
   this.defaultTimeZone='GMT '+(new Date()).getTimezoneOffset()/60;
