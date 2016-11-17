@@ -2,9 +2,11 @@
 前端时间控件
 
 源文件为bootstrap-datetimepicker.js和bootstrap-datetimepicker.min.js.
+
 修改后的文件为bootstrap-datetimepicker-ch.js
 
 修改部分：
+
 1、增加了中文部分（locales下的中文支持不符合AMD规范，requireJs加载报错）
 
 var dates = $.fn.datetimepicker.dates = {
@@ -30,8 +32,8 @@ var dates = $.fn.datetimepicker.dates = {
       suffix:      ['st', 'nd', 'rd', 'th'],
       today:       '今天'
     }
-    
   };
+  
   
 2、修改了Firefox下的错误
 
